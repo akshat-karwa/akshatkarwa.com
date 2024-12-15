@@ -45,10 +45,10 @@ export default function Home() {
             <span className="block text-2xl sm:text-3xl md:text-4xl uppercase">Akshat Karwa</span>
           </h1>
           <p className="text-lg sm:text-xl text-black-200 mt-4">
-            Computer Science Master's Student | Machine Learning Enthusiast
+            BS & MS Computer Science @ Georgia Tech <br></br>Data Science & Machine Learning Enthusiast
           </p>
           <div className="mt-8">
-            <Link href="/about">
+            <Link href="#about">
               <span className="px-6 py-3 bg-blue-600 text-white rounded-lg shadow-lg hover:bg-blue-700 transition duration-300">
                 Learn More About Me
               </span>
@@ -60,19 +60,36 @@ export default function Home() {
       {/* About Section */}
       <section
         id="about"
-        className="w-full h-screen bg-gray-100 flex flex-col items-center justify-center text-center"
+        className="w-full h-screen bg-cover bg-center bg-fixed flex flex-col items-center justify-center text-center"
+        style={{ backgroundImage: 'url("../images/background.jpg")' }}
       >
-        <h2 className="text-4xl font-bold text-gray-800 mb-4">About Me</h2>
-        <p className="text-lg text-gray-600 w-3/4">
-          I'm passionate about creating impactful solutions using machine learning and data science. Currently pursuing a Master's degree at
-          Georgia Tech, I enjoy tackling challenging problems and sharing my journey through projects.
-        </p>
+         {/* Picture */}
+        <div className="flex flex-col md:flex-row items-center md:items-start gap-8 max-w-6xl relative">
+        <div className="relative w-96 h-96 md:w-[450px] md:h-[450px] rounded-full overflow-hidden shadow-lg" style={{ top: '-2rem' }}>
+          <img
+            src="/images/profile.jpg"
+            alt="Akshat Karwa"
+            className="w-full h-auto rounded-full object-cover transform scale-110 mt-[-100px]"
+          />
+        </div>
+        {/* About Text */}
+        <div className="bg-white/90 backdrop-blur-sm p-8 rounded-lg shadow-lg md:max-w-xl w-full">
+          <h2 className="text-4xl font-bold text-black mb-6">About Me</h2>
+          <p className="text-lg text-black">
+            I'm a passionate computer scientist who enjoys solving problems and learning new skills. Having a strong background in <strong>Data Science</strong>, <strong>Algorithms</strong>, and <strong>Machine Learning</strong>,
+            I aspire to design efficient computational systems that can enable effective tailored solutions and ease people's lives. 
+            I am dedicated to developing high-quality, user-centric systems that drive meaningful impact, and am committed to making technology more accessible and beneficial.
+            <br /><br /> <strong>MS in Computer Science at Georgia Tech</strong>
+          </p>
+        </div>
+      </div>
       </section>
 
       {/* Projects Section */}
       <section
         id="projects"
-        className="w-full h-screen bg-white flex flex-col items-center justify-center text-center"
+        className="w-full h-screen bg-cover bg-center bg-fixed flex flex-col items-center justify-center text-center"
+        style={{ backgroundImage: 'url("../images/background.jpg")' }}
       >
         <h2 className="text-4xl font-bold text-gray-800 mb-4">Projects</h2>
         <ul className="space-y-4 w-3/4">
@@ -90,7 +107,8 @@ export default function Home() {
       {/* Contact Section */}
       <section
         id="contact"
-        className="w-full h-screen bg-gray-100 flex flex-col items-center justify-center text-center"
+        className="w-full h-screen bg-cover bg-center bg-fixed flex flex-col items-center justify-center text-center"
+        style={{ backgroundImage: 'url("../images/background.jpg")' }}
       >
         <h2 className="text-4xl font-bold text-gray-800 mb-4">Get in Touch</h2>
         <p className="text-lg text-gray-600 w-3/4">
