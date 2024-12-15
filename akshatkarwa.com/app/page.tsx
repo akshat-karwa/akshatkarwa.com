@@ -87,22 +87,86 @@ export default function Home() {
 
       {/* Projects Section */}
       <section
-        id="projects"
-        className="w-full h-screen bg-cover bg-center bg-fixed flex flex-col items-center justify-center text-center"
-        style={{ backgroundImage: 'url("../images/background.jpg")' }}
-      >
-        <h2 className="text-4xl font-bold text-gray-800 mb-4">Projects</h2>
-        <ul className="space-y-4 w-3/4">
-          <li>
-            <h3 className="text-lg font-semibold text-blue-600">Portfolio Builder</h3>
-            <p className="text-gray-600">A tool to build robust S&P 500 stock portfolios.</p>
-          </li>
-          <li>
-            <h3 className="text-lg font-semibold text-blue-600">Job Search Portal</h3>
-            <p className="text-gray-600">A dynamic platform for Georgia Tech students to search jobs efficiently.</p>
-          </li>
-        </ul>
-      </section>
+      id="project"
+      className="w-full h-screen bg-cover bg-center bg-fixed flex flex-col items-center text-center"
+      style={{ backgroundImage: 'url("../images/background.jpg")' }}
+    >
+      <div id="projects" className="h-0 -mt-16" />
+      <h2 className="text-4xl font-bold text-gray-800 mb-8 text-center">Projects</h2>
+      <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-8">
+        <div className="bg-white/90 backdrop-blur-sm p-6 rounded-lg shadow-lg">
+          <h3 className="text-lg font-semibold text-blue-600">BuzzAI - Course Discovery System</h3>
+          <p className="text-sm text-gray-500 mb-2">Software Engineer @ Georgia Tech</p>
+          <ul className="text-gray-600 space-y-2">
+            <li>• Built course recommender using transformer models (MiniLM, DistilRoBERTa) and FAISS, achieving 84.1% accuracy in course matching</li>
+            <li>• Engineered data pipeline with custom web scrapers processing 2,000+ courses with 90%+ relevance</li>
+          </ul>
+        </div>
+
+        <div className="bg-white/90 backdrop-blur-sm p-6 rounded-lg shadow-lg">
+          <h3 className="text-lg font-semibold text-blue-600">COVID Forecasting with Exogenous Data Integration</h3>
+          <p className="text-sm text-gray-500 mb-2">Data Scientist</p>
+          <ul className="text-gray-600 space-y-2">
+            <li>• Engineered epidemic spread forecasting system using SARIMA, Prophet, LSTM, reducing prediction error by 24%</li>
+            <li>• Optimized performance through analysis of 38 features, achieving 31% improvement in prediction accuracy</li>
+          </ul>
+        </div>
+
+        <div className="bg-white/90 backdrop-blur-sm p-6 rounded-lg shadow-lg">
+          <h3 className="text-lg font-semibold text-blue-600">Spotify Genre Classifier & Hit Predictor</h3>
+          <p className="text-sm text-gray-500 mb-2">Machine Learning Engineer</p>
+          <ul className="text-gray-600 space-y-2">
+            <li>• Analyzed 38,000+ songs achieving 87.3% accuracy in genre classification and 96% in hit prediction</li>
+            <li>• Implemented PCA, t-SNE, and UMAP for dimensionality reduction and pattern analysis</li>
+          </ul>
+        </div>
+
+        <div className="bg-white/90 backdrop-blur-sm p-6 rounded-lg shadow-lg">
+          <h3 className="text-lg font-semibold text-blue-600">Voice Cloning Using Deep Learning</h3>
+          <p className="text-sm text-gray-500 mb-2">Machine Learning Engineer</p>
+          <ul className="text-gray-600 space-y-2">
+            <li>• Built voice cloning system achieving 0.982 Mean Cosine Similarity & 0.019 Mean MSE</li>
+            <li>• Refined speaker encoder achieving 0.4036 Mel-spectrogram similarity on unseen speakers</li>
+          </ul>
+        </div>
+
+        <div className="bg-white/90 backdrop-blur-sm p-6 rounded-lg shadow-lg">
+          <h3 className="text-lg font-semibold text-blue-600">BeeHired – Job Aggregation Portal</h3>
+          <p className="text-sm text-gray-500 mb-2">Software Engineer</p>
+          <ul className="text-gray-600 space-y-2">
+            <li>• Created web crawler processing listings at 1.04s/post with 0.14s parsing speed</li>
+            <li>• Built full-stack platform processing 10,000+ posts with 0.07s query response time</li>
+          </ul>
+        </div>
+
+        <div className="bg-white/90 backdrop-blur-sm p-6 rounded-lg shadow-lg">
+          <h3 className="text-lg font-semibold text-blue-600">Real-Time Algorithmic Trading Platform</h3>
+          <p className="text-sm text-gray-500 mb-2">Developer</p>
+          <ul className="text-gray-600 space-y-2">
+            <li>• Developed trading platform integrating Kotak Mahindra Bank API for real-time execution</li>
+            <li>• Implemented efficient data handling techniques for optimal performance</li>
+          </ul>
+        </div>
+
+        <div className="bg-white/90 backdrop-blur-sm p-6 rounded-lg shadow-lg">
+          <h3 className="text-lg font-semibold text-blue-600">Airline Database Management System</h3>
+          <p className="text-sm text-gray-500 mb-2">Database Engineer</p>
+          <ul className="text-gray-600 space-y-2">
+            <li>• Implemented MySQL procedures for comprehensive airline operations management</li>
+            <li>• Analyzed scenarios and handled dataset irregularities through simulation cycles</li>
+          </ul>
+        </div>
+
+        <div className="bg-white/90 backdrop-blur-sm p-6 rounded-lg shadow-lg">
+          <h3 className="text-lg font-semibold text-blue-600">Road Crossing Mobile Game</h3>
+          <p className="text-sm text-gray-500 mb-2">Mobile Developer</p>
+          <ul className="text-gray-600 space-y-2">
+            <li>• Developed feature-rich mobile game with comprehensive gameplay mechanics</li>
+            <li>• Optimized UI/UX for seamless performance across devices</li>
+          </ul>
+        </div>
+      </div>
+    </section>
 
       {/* Contact Section */}
       <section
@@ -111,15 +175,40 @@ export default function Home() {
         style={{ backgroundImage: 'url("../images/background.jpg")' }}
       >
         <h2 className="text-4xl font-bold text-gray-800 mb-4">Get in Touch</h2>
-        <p className="text-lg text-gray-600 w-3/4">
+        <p className="text-2xl text-black w-3/4">
           Let's connect!
         </p>
-        <div className="mt-6">
-          <Link href="/contact">
-            <span className="px-4 py-2 bg-green-500 text-white rounded-lg shadow-md hover:bg-green-600 transition duration-300">
-              Contact Me
-            </span>
-          </Link>
+        <div className="mt-6 flex flex-wrap justify-center gap-4">
+          <a href="https://www.linkedin.com/in/akshatkarwa/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="px-6 py-3 bg-green-500 text-white rounded-lg shadow-md hover:bg-green-600 transition duration-300">
+            LinkedIn
+          </a>
+          <a href="https://github.com/akshat-karwa"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="px-6 py-3 bg-green-500 text-white rounded-lg shadow-md hover:bg-green-600 transition duration-300">
+            GitHub
+          </a>
+          <a href="mailto:akshatkarwa21@gmail.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="px-6 py-3 bg-green-500 text-white rounded-lg shadow-md hover:bg-green-600 transition duration-300">
+            Email
+          </a>
+          <a href="/resume/Akshat_Karwa_Resume_Latex.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="px-6 py-3 bg-green-500 text-white rounded-lg shadow-md hover:bg-green-600 transition duration-300">
+            Resume
+          </a>
+          <a href="tel:+14044909911"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="px-6 py-3 bg-green-500 text-white rounded-lg shadow-md hover:bg-green-600 transition duration-300">
+            Contact
+          </a>
         </div>
       </section>
     </main>
