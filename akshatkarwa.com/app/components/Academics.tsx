@@ -12,11 +12,9 @@ export default function Academics() {
             backgroundSize: 'cover',
             backgroundPosition: 'center',
             backgroundRepeat: 'no-repeat',
-            backgroundAttachment: 'scroll', // Important for mobile
+            backgroundAttachment: 'scroll',
             position: 'relative',
             width: '100%',
-            height: '100vh',
-            overflow: 'hidden'
         }}
       >
       <div className="flex items-center justify-center h-full">

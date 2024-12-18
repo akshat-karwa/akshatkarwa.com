@@ -8,11 +8,9 @@ export default function Projects() {
                     backgroundSize: 'cover',
                     backgroundPosition: 'center',
                     backgroundRepeat: 'no-repeat',
-                    backgroundAttachment: 'scroll', // Important for mobile
+                    backgroundAttachment: 'scroll',
                     position: 'relative',
-                    width: '100%',
-                    height: '100vh',
-                    overflow: 'hidden'
+                    width: '100%'
                 }}
             >
             <div className="border-4 border-black px-6 py-2 rounded-lg inline-block bg-white/90 backdrop-blur-sm mb-6 sm:mb-8">

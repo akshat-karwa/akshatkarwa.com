@@ -13,8 +13,6 @@ export default function About() {
             backgroundAttachment: 'scroll',
             position: 'relative',
             width: '100%',
-            height: '100vh',
-            overflow: 'hidden'
         }}
       >
       <div className="flex flex-col lg:flex-row items-center lg:items-start gap-6 lg:gap-12 max-w-7xl relative w-full">
