@@ -84,7 +84,7 @@ export default function Home() {
             Email
           </a>
           <a 
-            href="/resume/Akshat_Karwa_Resume_Latex.pdf"
+            href="/resume/Resume_Akshat_Karwa.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="px-3 sm:px-4 lg:px-6 py-2 sm:py-3 text-sm sm:text-base bg-blue-600 text-white rounded-lg shadow-md hover:bg-green-600 transition duration-300"
