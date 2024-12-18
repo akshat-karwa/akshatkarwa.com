@@ -4,15 +4,21 @@ export default function Academics() {
   const url = "https://akshat-karwa.github.io/coursework-graph-visualization/";
   
   return (
-    <section
-      id="academics"
-      className="w-full min-h-screen bg-cover bg-center bg-fixed flex flex-col pt-24 pb-12"
-      style={{
-        backgroundImage: 'url("/images/background.jpg")',
-        backgroundSize: 'cover',
-        backgroundPosition: 'center center'
-      }}
-    >
+      <section
+        id="academics"
+        className="relative w-full min-h-screen flex flex-col pt-24 pb-12"
+        style={{
+            backgroundImage: 'url("/images/background.jpg")',
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            backgroundRepeat: 'no-repeat',
+            backgroundAttachment: 'scroll', // Important for mobile
+            position: 'relative',
+            width: '100%',
+            height: '100vh',
+            overflow: 'hidden'
+        }}
+      >
       <div className="flex items-center justify-center h-full">
         <div className="relative w-4/5 group">
           <Link 

@@ -1,12 +1,18 @@
 export default function Projects() {
     return (
-            <section
+            <section 
                 id="projects"
-                className="w-full min-h-screen bg-cover bg-center md:bg-fixed flex flex-col items-center text-center pt-24 px-4 sm:px-6 lg:px-8"
+                className="relative w-full min-h-screen flex flex-col items-center text-center pt-24 px-4 sm:px-6 lg:px-8"
                 style={{
-                    backgroundImage: 'url("../images/background.jpg")', 
+                    backgroundImage: 'url("../images/background.jpg")',
                     backgroundSize: 'cover',
-                    backgroundPosition: 'center center'
+                    backgroundPosition: 'center',
+                    backgroundRepeat: 'no-repeat',
+                    backgroundAttachment: 'scroll', // Important for mobile
+                    position: 'relative',
+                    width: '100%',
+                    height: '100vh',
+                    overflow: 'hidden'
                 }}
             >
             <div className="border-4 border-black px-6 py-2 rounded-lg inline-block bg-white/90 backdrop-blur-sm mb-6 sm:mb-8">
