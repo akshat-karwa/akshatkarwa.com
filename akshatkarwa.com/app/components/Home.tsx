@@ -10,11 +10,9 @@ export default function Home() {
               backgroundSize: 'cover',
               backgroundPosition: 'center',
               backgroundRepeat: 'no-repeat',
-              backgroundAttachment: 'scroll', // Important for mobile
+              backgroundAttachment: 'scroll',
               position: 'relative',
               width: '100%',
-              height: '100vh',
-              overflow: 'hidden'
           }}
       >
       <div className="relative z-10 w-full max-w-3xl sm:max-w-4xl mx-auto">
