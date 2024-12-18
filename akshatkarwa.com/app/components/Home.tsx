@@ -4,8 +4,12 @@ export default function Home() {
   return (
     <section id="home" className="relative w-full min-h-screen flex items-center justify-center text-center px-4 sm:px-6 lg:px-8 py-8 lg:py-0 overflow-hidden">
       <div
-        className="absolute inset-0 bg-cover bg-center bg-fixed"
-        style={{ backgroundImage: 'url("/images/background.jpg")' }}
+        className="absolute inset-0 bg-cover bg-center bg-fixed md:bg-fixed"
+        style={{
+          backgroundImage: 'url("/images/background.jpg")',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center center'
+        }}
       />
 
       <div className="relative z-10 w-full max-w-3xl sm:max-w-4xl mx-auto">

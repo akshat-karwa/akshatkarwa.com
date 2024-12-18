@@ -6,8 +6,12 @@ export default function Academics() {
   return (
     <section
       id="academics"
-      className="w-full min-h-screen bg-cover bg-center bg-fixed pt-24 pb-12"
-      style={{ backgroundImage: 'url("/images/background.jpg")' }}
+      className="w-full min-h-screen bg-cover bg-center bg-fixed flex flex-col pt-24 pb-12"
+      style={{
+        backgroundImage: 'url("/images/background.jpg")',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center center'
+      }}
     >
       <div className="flex items-center justify-center h-full">
         <div className="relative w-4/5 group">

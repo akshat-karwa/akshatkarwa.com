@@ -17,8 +17,8 @@ export default function Navbar() {
       
       setTimeout(() => {
         const windowWidth = window.innerWidth;
-        const offset = windowWidth < 640 ? -32 :
-        windowWidth < 1024 ? -22 :
+        const offset = windowWidth < 640 ? -12 :
+        windowWidth < 1024 ? -12:
         0;
         const elementPosition = element.getBoundingClientRect().top;
         const offsetPosition = elementPosition + window.pageYOffset - offset;
