@@ -2,8 +2,12 @@ export default function Projects() {
     return (
             <section
                 id="projects"
-                className="w-full min-h-screen bg-cover bg-center bg-fixed flex flex-col items-center text-center pt-24 px-4 sm:px-6 lg:px-8"
-                style={{ backgroundImage: 'url("../images/background.jpg")' }}
+                className="w-full min-h-screen bg-cover bg-center md:bg-fixed flex flex-col items-center text-center pt-24 px-4 sm:px-6 lg:px-8"
+                style={{
+                    backgroundImage: 'url("../images/background.jpg")', 
+                    backgroundSize: 'cover',
+                    backgroundPosition: 'center center'
+                }}
             >
             <div className="border-4 border-black px-6 py-2 rounded-lg inline-block bg-white/90 backdrop-blur-sm mb-6 sm:mb-8">
                 <h2 className="text-2xl sm:text-3xl font-bold text-black text-center">Selected Projects</h2>
