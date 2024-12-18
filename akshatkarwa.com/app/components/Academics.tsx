@@ -20,8 +20,8 @@ export default function Academics() {
             <span className="font-medium">Open Page</span>
             <svg 
               className="w-4 h-4" 
-              fill="none" 
-              stroke="currentColor" 
+              fill="none"
+              stroke="currentColor"
               viewBox="0 0 24 24"
             >
               <path 

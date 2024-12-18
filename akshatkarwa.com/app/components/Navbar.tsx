@@ -1,57 +1,130 @@
 "use client";
-import Link from 'next/link';
-import React, { useState } from "react";
+import React, { useState, useCallback } from "react";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
+  const handleMouseLeave = useCallback(() => {
+    if (window.innerWidth <= 1024) {
+      setIsOpen(false);
+    }
+  }, []);
+
+  const scrollToSection = (id: string) => {
+    const element = document.getElementById(id);
+    if (element) {
+      setIsOpen(false);
+      
+      setTimeout(() => {
+        const windowWidth = window.innerWidth;
+        const offset = windowWidth < 640 ? -32 :
+        windowWidth < 1024 ? -22 :
+        0;
+        const elementPosition = element.getBoundingClientRect().top;
+        const offsetPosition = elementPosition + window.pageYOffset - offset;
+
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: 'smooth'
+        });
+      }, 10);
+    }
+  };
+
+  const handleClick = (e: React.MouseEvent<HTMLAnchorElement> | React.TouchEvent<HTMLAnchorElement>, id: string) => {
+    e.preventDefault();
+    scrollToSection(id);
+  };
+
   return (
     <nav className="w-full bg-black text-white shadow-md fixed top-0 z-50">
-      <div className="container mx-auto flex flex-wrap items-center justify-between py-4 px-4 md:py-6 md:px-6">
-        <div className="text-xl md:text-2xl font-bold hover:text-gray-300 transition duration-300">
-          <Link href="/">AKSHAT KARWA</Link>
+      <div className="container mx-auto flex flex-wrap items-center justify-between py-3 px-4 sm:py-4 sm:px-6 lg:py-6 lg:px-8">
+        <div className="text-lg sm:text-xl lg:text-2xl font-bold hover:text-gray-300 transition duration-300">
+          <a 
+            href="#home" 
+            onClick={(e) => handleClick(e, 'home')}
+            onTouchEnd={(e) => handleClick(e, 'home')}
+          >
+            AKSHAT KARWA
+          </a>
         </div>
 
         <button
           onClick={() => setIsOpen(!isOpen)}
-          className="flex md:hidden flex-col justify-center items-center"
+          className="flex lg:hidden flex-col justify-center items-center p-2"
+          aria-label="Toggle menu"
         >
           <span className={`block w-6 h-0.5 bg-white mb-1.5 transform transition-all duration-300 ${isOpen ? 'rotate-45 translate-y-2' : ''}`}></span>
           <span className={`block w-6 h-0.5 bg-white mb-1.5 transition-all duration-300 ${isOpen ? 'opacity-0' : ''}`}></span>
           <span className={`block w-6 h-0.5 bg-white transform transition-all duration-300 ${isOpen ? '-rotate-45 -translate-y-2' : ''}`}></span>
         </button>
 
-        {/* Navigation Links - Desktop */}
-        <div className="hidden md:flex font-bold text-xl space-x-20">
-          <Link href="#home" className="hover:text-gray-300 transition duration-300">
+        {/* Desktop Navigation */}
+        <div className="hidden lg:flex font-bold text-xl space-x-16 xl:space-x-20">
+          <a 
+            href="#home" 
+            onClick={(e) => handleClick(e, 'home')}
+            className="hover:text-gray-300 transition duration-300"
+          >
             Home
-          </Link>
-          <Link href="#about" className="hover:text-gray-300 transition duration-300">
+          </a>
+          <a 
+            href="#about" 
+            onClick={(e) => handleClick(e, 'about')}
+            className="hover:text-gray-300 transition duration-300"
+          >
             About
-          </Link>
-          <Link href="#projects" className="hover:text-gray-300 transition duration-300">
+          </a>
+          <a 
+            href="#projects" 
+            onClick={(e) => handleClick(e, 'projects')}
+            className="hover:text-gray-300 transition duration-300"
+          >
             Projects
-          </Link>
-          <Link href="#academics" className="hover:text-gray-300 transition duration-300">
+          </a>
+          <a 
+            href="#academics" 
+            onClick={(e) => handleClick(e, 'academics')}
+            className="hover:text-gray-300 transition duration-300"
+          >
             Academics
-          </Link>
+          </a>
         </div>
 
-        {/* Navigation Links - Mobile */}
-        <div className={`${isOpen ? 'flex' : 'hidden'} w-full md:hidden`}>
-          <div className="flex flex-col items-center w-full space-y-4 pt-4">
-            <Link href="#home" className="hover:text-gray-300 transition duration-300 w-full text-center py-2">
-              Home
-            </Link>
-            <Link href="#about" className="hover:text-gray-300 transition duration-300 w-full text-center py-2">
-              About
-            </Link>
-            <Link href="#projects" className="hover:text-gray-300 transition duration-300 w-full text-center py-2">
-              Projects
-            </Link>
-            {/* Academics link removed from mobile menu */}
+        {/* Mobile Navigation Menu */}
+        {isOpen && (
+          <div 
+            className="absolute top-full left-0 w-full lg:hidden bg-black shadow-lg"
+            onMouseLeave={handleMouseLeave}
+          >
+            <div className="flex flex-col items-center w-full">
+              <a 
+                href="#home"
+                onClick={(e) => handleClick(e, 'home')}
+                onTouchEnd={(e) => handleClick(e, 'home')}
+                className="w-full text-center py-4 hover:bg-gray-800 transition duration-300 text-base sm:text-lg"
+              >
+                Home
+              </a>
+              <a 
+                href="#about"
+                onClick={(e) => handleClick(e, 'about')}
+                onTouchEnd={(e) => handleClick(e, 'about')}
+                className="w-full text-center py-4 hover:bg-gray-800 transition duration-300 text-base sm:text-lg"
+              >
+                About
+              </a>
+              <a 
+                href="#projects"
+                onClick={(e) => handleClick(e, 'projects')}
+                onTouchEnd={(e) => handleClick(e, 'projects')}
+                className="w-full text-center py-4 hover:bg-gray-800 transition duration-300 text-base sm:text-lg"
+              >
+                Projects
+              </a>
+            </div>
           </div>
-        </div>
+        )}
       </div>
     </nav>
   );
