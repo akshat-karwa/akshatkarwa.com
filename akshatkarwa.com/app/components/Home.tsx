@@ -47,7 +47,7 @@ export default function Home() {
             </span>
           </Link>
         </div>
-        <h2 className="text-3xl font-bold text-black mb-4 mt-6">Let's Connect!</h2>
+        <h2 className="text-3xl font-bold text-black mb-4 mt-6">Lets Connect!</h2>
         <div className="mt-6 flex flex-wrap justify-center gap-4">
           <a 
             href="https://www.linkedin.com/in/akshatkarwa/"

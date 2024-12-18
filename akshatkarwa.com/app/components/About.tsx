@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import Image from 'next/image';
 
 export default function About() {
@@ -23,8 +22,9 @@ export default function About() {
         <div className="bg-white/90 backdrop-blur-sm p-8 rounded-lg shadow-lg md:max-w-xl w-full border-8 border-black">
           <h2 className="text-4xl font-bold text-black mb-6">About Me</h2>
           <p className="text-lg text-black">
-            I'm a passionate computer scientist who enjoys solving problems and learning new skills. Having a strong background in <strong>Data Science</strong>, <strong>Algorithms</strong>, and <strong>Machine Learning</strong>,
-            I aspire to design efficient computational systems that can enable effective tailored solutions and ease people's lives. 
+            I am a passionate computer scientist who enjoys solving problems and learning new skills. Having a strong background in 
+            <strong>Data Science</strong>, <strong>Algorithms</strong>, and <strong>Machine Learning</strong>,
+            I aspire to design efficient computational systems that can enable effective tailored solutions and ease peoples lives.
             I am dedicated to developing high-quality, user-centric systems that drive meaningful impact, and am committed to making technology more accessible and beneficial.
             <br /><br /> <strong>MS in Computer Science at Georgia Tech</strong>
           </p>

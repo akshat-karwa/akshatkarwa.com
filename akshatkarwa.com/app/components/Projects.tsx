@@ -1,5 +1,3 @@
-import Link from 'next/link';
-
 export default function Projects() {
     return (
             <section
@@ -7,17 +5,17 @@ export default function Projects() {
             className="w-full min-h-screen bg-cover bg-center bg-fixed flex flex-col items-center text-center pt-24"
             style={{ backgroundImage: 'url("../images/background.jpg")' }}
             >
-            <div className="border-4 border-black px-6 py-2 rounded-lg inline-block bg-white/90 backdrop-blur-sm mb-2">
-            <h2 className="text-2xl font-bold text-black text-center">Projects</h2>
+            <div className="border-4 border-black px-4 py-1 rounded-lg inline-block bg-white/90 backdrop-blur-sm mb-2">
+            <h2 className="text-3xl font-bold text-black text-center">Selected Projects</h2>
             </div>
     
-            <div className="max-w-7xl mx-auto grid md:grid-cols-3 gap-8">
+            <div className="max-w-[95rem] mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-8 px-4 sm:px-8">
     
             <a href="https://github.com/Mehul20/Buzz-AI"
             target="_blank"
             rel="noopener noreferrer"
             className="block hover:transform hover:scale-105 transition-transform duration-200 max-w-lg">
-                <div className="bg-white/90 backdrop-blur-sm p-6 rounded-lg shadow-lg border-4 border-black">
+                <div className="bg-white/90 backdrop-blur-sm p-4 rounded-lg shadow-lg border-4 border-black h-auto w-full sm:min-w-[300px] md:min-w-[350px] lg:min-w-[400px] flex flex-col">
                 <h3 className="text-lg font-semibold text-blue-600">BuzzAI - Course Discovery System - Georgia Tech</h3>
                 <p className="text-base font-medium text-black mb-2">Software Engineer</p>
                 <div className="mb-4">
@@ -27,7 +25,7 @@ export default function Projects() {
                     className="w-full h-auto rounded-lg"
                     />
                 </div>
-                <ul className="text-black text-left space-y-2 list-none">
+                <ul className="text-black text-left space-y-1 list-none flex-grow">
                     <li className="relative pl-6 before:content-['▹'] before:absolute before:left-0 before:text-blue-600">
                     Built course recommender using transformer models (MiniLM, DistilRoBERTa) and FAISS, with custom filtering, 
                     collaborative profiling, and Llama model for generating topic descriptions, achieving 84.1% accuracy in course matching.
@@ -44,7 +42,7 @@ export default function Projects() {
             target="_blank"
             rel="noopener noreferrer"
             className="block hover:transform hover:scale-105 transition-transform duration-200 max-w-lg">
-                <div className="bg-white/90 backdrop-blur-sm p-6 rounded-lg shadow-lg border-4 border-black">
+                <div className="bg-white/90 backdrop-blur-sm p-4 rounded-lg shadow-lg border-4 border-black h-auto w-full sm:min-w-[300px] md:min-w-[350px] lg:min-w-[400px] flex flex-col">
                 <h3 className="text-lg font-semibold text-blue-600">COVID Forecasting with Exogenous Data Integration</h3>
                 <p className="text-base font-medium text-black mb-2">Data Scientist</p>
                 <div className="mb-4">
@@ -54,7 +52,7 @@ export default function Projects() {
                     className="w-full h-auto rounded-lg"
                     />
                 </div>
-                <ul className="text-black text-left space-y-2 list-none">
+                <ul className="text-black text-left space-y-1 list-none flex-grow">
                     <li className="relative pl-6 before:content-['▹'] before:absolute before:left-0 before:text-blue-600">
                     Engineered an epidemic spread forecasting system utilizing state-of-the-art models (SARIMA, Prophet, LSTM, RNN, SI, 
                     TBATS), integrating exogenous data across 1,674 days, reducing prediction error by 24% over traditional approaches.
@@ -71,7 +69,7 @@ export default function Projects() {
             target="_blank"
             rel="noopener noreferrer"
             className="block hover:transform hover:scale-105 transition-transform duration-200 max-w-lg">
-                <div className="bg-white/90 backdrop-blur-sm p-6 rounded-lg shadow-lg border-4 border-black">
+                <div className="bg-white/90 backdrop-blur-sm p-4 rounded-lg shadow-lg border-4 border-black h-auto w-full sm:min-w-[300px] md:min-w-[350px] lg:min-w-[400px] flex flex-col">
                 <h3 className="text-lg font-semibold text-blue-600">Spotify Song Genre Classifier & Popularity Predictor</h3>
                 <p className="text-base font-medium text-black mb-2">Machine Learning Engineer</p>
                 <div className="mb-4">
@@ -81,7 +79,7 @@ export default function Projects() {
                     className="w-full h-auto rounded-lg"
                     />
                 </div>
-                <ul className="text-black text-left space-y-2 list-none">
+                <ul className="text-black text-left space-y-1 list-none flex-grow">
                     <li className="relative pl-6 before:content-['▹'] before:absolute before:left-0 before:text-blue-600">
                     Analyzed Spotify data encompassing 38,000+ songs to develop a predictive model, achieving 87.3% accuracy in genre 
                     classification using Random Forest (F1 score: 0.88) and 96% accuracy in hit prediction.
@@ -98,7 +96,7 @@ export default function Projects() {
             target="_blank"
             rel="noopener noreferrer"
             className="block hover:transform hover:scale-105 transition-transform duration-200 max-w-lg">
-                <div className="bg-white/90 backdrop-blur-sm p-6 rounded-lg shadow-lg border-4 border-black">
+                <div className="bg-white/90 backdrop-blur-sm p-4 rounded-lg shadow-lg border-4 border-black h-auto w-full sm:min-w-[300px] md:min-w-[350px] lg:min-w-[400px] flex flex-col">
                 <h3 className="text-lg font-semibold text-blue-600">Voice Cloning Using Deep Learning</h3>
                 <p className="text-base font-medium text-black mb-2">Machine Learning Engineer</p>
                 <div className="mb-4">
@@ -108,7 +106,7 @@ export default function Projects() {
                     className="w-full h-auto rounded-lg"
                     />
                 </div>
-                <ul className="text-black text-left space-y-2 list-none">
+                <ul className="text-black text-left space-y-1 list-none flex-grow">
                     <li className="relative pl-6 before:content-['▹'] before:absolute before:left-0 before:text-blue-600">
                     Built a voice cloning system using YourTTS and TortoiseTTS, achieving exceptional voice replication (Mean Cosine 
                     Similarity: 0.982 & Mean MSE: 0.019) through architectural optimizations and effective fine-tuning.
@@ -125,7 +123,7 @@ export default function Projects() {
             target="_blank"
             rel="noopener noreferrer"
             className="block hover:transform hover:scale-105 transition-transform duration-200 max-w-lg">
-                <div className="bg-white/90 backdrop-blur-sm p-6 rounded-lg shadow-lg border-4 border-black">
+                <div className="bg-white/90 backdrop-blur-sm p-4 rounded-lg shadow-lg border-4 border-black h-auto w-full sm:min-w-[300px] md:min-w-[350px] lg:min-w-[400px] flex flex-col">
                 <h3 className="text-lg font-semibold text-blue-600">Automated Algorithm Design</h3>
                 <p className="text-base font-medium text-black mb-2">Software Engineer</p>
                 <div className="mb-4">
@@ -135,7 +133,7 @@ export default function Projects() {
                     className="w-full h-auto rounded-lg"
                     />
                 </div>
-                <ul className="text-black text-left space-y-2 list-none">
+                <ul className="text-black text-left space-y-1 list-none flex-grow">
                     <li className="relative pl-6 before:content-['▹'] before:absolute before:left-0 before:text-blue-600">
                     Developed the EMADE framework, implementing a multi-island model with diverse objectives and dynamic migration topology 
                     that improved population diversity by 38% phenotypically and 11% genotypically, outperforming algorithms like NSGA-II and MOEA/D.
@@ -149,7 +147,7 @@ export default function Projects() {
             </a>
     
             <a className="block hover:transform hover:scale-105 transition-transform duration-200 max-w-lg">
-                <div className="bg-white/90 backdrop-blur-sm p-6 rounded-lg shadow-lg border-4 border-black">
+            <div className="bg-white/90 backdrop-blur-sm p-4 rounded-lg shadow-lg border-4 border-black h-auto w-full sm:min-w-[300px] md:min-w-[350px] lg:min-w-[400px] flex flex-col">
                 <h3 className="text-lg font-semibold text-blue-600">BeeHired - Job Aggregation Portal</h3>
                 <p className="text-base font-medium text-black mb-2">Software Engineer</p>
                 <div className="mb-4">
@@ -159,7 +157,7 @@ export default function Projects() {
                     className="w-full h-auto rounded-lg"
                     />
                 </div>
-                <ul className="text-black text-left space-y-2 list-none">
+                <ul className="text-black text-left space-y-1 list-none flex-grow">
                     <li className="relative pl-6 before:content-['▹'] before:absolute before:left-0 before:text-blue-600">
                     Created high-performance web crawler processing listings at 1.04s/post with 0.14s parsing speed for 100+ posts, and 
                     optimized storage to 0.08s/entry, through Selenium WebDriver implementation.
@@ -173,7 +171,7 @@ export default function Projects() {
             </a>
     
             <a className="block hover:transform hover:scale-105 transition-transform duration-200 max-w-lg">
-                <div className="bg-white/90 backdrop-blur-sm p-6 rounded-lg shadow-lg border-4 border-black">
+            <div className="bg-white/90 backdrop-blur-sm p-4 rounded-lg shadow-lg border-4 border-black h-auto w-full sm:min-w-[300px] md:min-w-[350px] lg:min-w-[400px] flex flex-col">
                 <h3 className="text-lg font-semibold text-blue-600">Real-Time Algorithmic Trading Platform</h3>
                 <p className="text-base font-medium text-black mb-2">Software Developer</p>
                 <div className="mb-4">
@@ -183,7 +181,7 @@ export default function Projects() {
                     className="w-full h-auto rounded-lg"
                     />
                 </div>
-                <ul className="text-black text-left space-y-2 list-none">
+                <ul className="text-black text-left space-y-1 list-none flex-grow">
                     <li className="relative pl-6 before:content-['▹'] before:absolute before:left-0 before:text-blue-600">
                     Developed an algorithmic trading platform integrated with Kotak Mahindra Bank API, enabling automated trade execution 
                     with average latency under 50ms, and reducing manual intervention by 90%. Implemented robust error handling to 
@@ -198,7 +196,7 @@ export default function Projects() {
             </a>
             
             <a className="block hover:transform hover:scale-105 transition-transform duration-200 max-w-lg">
-                <div className="bg-white/90 backdrop-blur-sm p-6 rounded-lg shadow-lg border-4 border-black">
+            <div className="bg-white/90 backdrop-blur-sm p-4 rounded-lg shadow-lg border-4 border-black h-auto w-full sm:min-w-[300px] md:min-w-[350px] lg:min-w-[400px] flex flex-col">
                 <h3 className="text-lg font-semibold text-blue-600">Airline Database Management System</h3>
                 <p className="text-base font-medium text-black mb-2">Database Engineer</p>
                 <div className="mb-4">
@@ -208,7 +206,7 @@ export default function Projects() {
                     className="w-full h-auto rounded-lg"
                     />
                 </div>
-                <ul className="text-black text-left space-y-2 list-none">
+                <ul className="text-black text-left space-y-1 list-none flex-grow">
                     <li className="relative pl-6 before:content-['▹'] before:absolute before:left-0 before:text-blue-600">
                     Implemented MySQL procedures, views, and structures to administer passenger/pilot profiles and movements, 
                     flight assignments, takeoffs/landings, delays, ticket purchases, route creation and boarding/disembarking.
@@ -221,7 +219,7 @@ export default function Projects() {
             </a>
     
             <a className="block hover:transform hover:scale-105 transition-transform duration-200 max-w-lg">
-                <div className="bg-white/90 backdrop-blur-sm p-6 rounded-lg shadow-lg border-4 border-black">
+            <div className="bg-white/90 backdrop-blur-sm p-4 rounded-lg shadow-lg border-4 border-black h-auto w-full sm:min-w-[300px] md:min-w-[350px] lg:min-w-[400px] flex flex-col">
                 <h3 className="text-lg font-semibold text-blue-600">Road Crossing Mobile Game</h3>
                 <p className="text-base font-medium text-black mb-2">Mobile Developer</p>
                 <div className="mb-4">
@@ -231,12 +229,39 @@ export default function Projects() {
                     className="w-full h-auto rounded-lg"
                     />
                 </div>
-                <ul className="text-black text-left space-y-2 list-none">
+                <ul className="text-black text-left space-y-1 list-none flex-grow">
                     <li className="relative pl-6 before:content-['▹'] before:absolute before:left-0 before:text-blue-600">
                     Developed a feature-rich mobile game implementing gameplay mechanics, player functionalities, and game assets.
                     </li>
                     <li className="relative pl-6 before:content-['▹'] before:absolute before:left-0 before:text-blue-600">
                     Integrated multiple screens and optimized UI/UX for seamless performance and an engaging experience across devices.
+                    </li>
+                </ul>
+                </div>
+            </a>
+
+            <a href="https://github.com/akshat-karwa/coursework-graph-visualization"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="block hover:transform hover:scale-105 transition-transform duration-200 max-w-lg">
+                <div className="bg-white/90 backdrop-blur-sm p-4 rounded-lg shadow-lg border-4 border-black h-auto w-full sm:min-w-[300px] md:min-w-[350px] lg:min-w-[400px] flex flex-col">
+                <h3 className="text-lg font-semibold text-blue-600">Coursework Constellation</h3>
+                <p className="text-base font-medium text-black mb-2">Data Visualization Engineer</p>
+                <div className="mb-4">
+                    <img 
+                    src="/images/coursework_visualization.jpg"
+                    alt="Coursework Visualization Project"
+                    className="w-full h-auto rounded-lg"
+                    />
+                </div>
+                <ul className="text-black text-left space-y-1 list-none flex-grow">
+                    <li className="relative pl-6 before:content-['▹'] before:absolute before:left-0 before:text-blue-600">
+                    Built an interactive D3.js visualization showing 35+ courses that I have taken at Georgia Tech, where nodes 
+                    represent courses and edges show course relationships, with color gradients reflecting course depth/prerequisites.
+                    </li>
+                    <li className="relative pl-6 before:content-['▹'] before:absolute before:left-0 before:text-blue-600">
+                    Created a dual-panel layout: left panel displaying standalone general education courses with no prerequisites, while 
+                    the right panel mapping the interconnected technical curriculum through directed edges showing course dependencies.
                     </li>
                 </ul>
                 </div>

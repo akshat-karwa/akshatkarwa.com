@@ -6,7 +6,7 @@ export default function Academics() {
   return (
     <section
       id="academics"
-      className="w-full min-h-screen bg-cover bg-center bg-fixed py-20"
+      className="w-full min-h-screen bg-cover bg-center bg-fixed pt-24 pb-12"
       style={{ backgroundImage: 'url("/images/background.jpg")' }}
     >
       <div className="flex items-center justify-center h-full">
