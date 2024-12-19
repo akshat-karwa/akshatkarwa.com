@@ -271,6 +271,62 @@ export default function Projects() {
                     </ul>
                 </div>
             </a>
+
+            <a href="https://s3.amazonaws.com/coursera_assets/meta_images/generated/CERTIFICATE_LANDING_PAGE/CERTIFICATE_LANDING_PAGE~VTUQNGS7RRGG/CERTIFICATE_LANDING_PAGE~VTUQNGS7RRGG.jpeg"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group flex w-full transform transition-all duration-300 hover:scale-[1.02]"
+            >
+                <div className="bg-white/90 backdrop-blur-sm p-4 sm:p-6 rounded-lg shadow-lg border-4 border-black flex flex-col w-full">
+                    <h3 className="text-base sm:text-lg font-semibold text-blue-600 mb-1">Machine Learning Specialization</h3>
+                    <p className="text-sm sm:text-base font-medium text-black mb-3">ML Developer</p>
+                    <div className="mb-4 aspect-video">
+                        <img 
+                            src="/images/ML_Coursera.jpg"
+                            alt="JavaScript Applications Project"
+                            className="w-full h-full object-cover rounded-lg"
+                        />
+                    </div>
+                    <ul className="text-black text-left space-y-2 text-sm sm:text-base flex-grow">
+                        <li className="relative pl-5 before:content-['▹'] before:absolute before:left-0 before:text-blue-600">
+                            Designed and implemented diverse ML algorithms including neural networks, SVMs, and recommender systems using GNU Octave,
+                            achieving optimal model performance through systematic hyperparameter tuning.
+                        </li>
+                        <li className="relative pl-5 before:content-['▹'] before:absolute before:left-0 before:text-blue-600">
+                            Built and optimized supervised and unsupervised learning models while mastering fundamental ML concepts through hands-on 
+                            implementation of clustering, gradient descent, and backpropagation algorithms.
+                        </li>
+                    </ul>
+                </div>
+            </a>
+
+            <a href="https://udemy-certificate.s3.amazonaws.com/image/UC-862a5f46-9354-4fc6-97ad-966e08fb0582.jpg?v=1593967988000"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group flex w-full transform transition-all duration-300 hover:scale-[1.02]"
+            >
+                <div className="bg-white/90 backdrop-blur-sm p-4 sm:p-6 rounded-lg shadow-lg border-4 border-black flex flex-col w-full">
+                    <h3 className="text-base sm:text-lg font-semibold text-blue-600 mb-1">JavaScript Applications</h3>
+                    <p className="text-sm sm:text-base font-medium text-black mb-3">Full Stack Developer</p>
+                    <div className="mb-4 aspect-video">
+                        <img 
+                            src="/images/JS_certificate.jpg"
+                            alt="JavaScript Applications Project"
+                            className="w-full h-full object-cover rounded-lg"
+                        />
+                    </div>
+                    <ul className="text-black text-left space-y-2 text-sm sm:text-base flex-grow">
+                        <li className="relative pl-5 before:content-['▹'] before:absolute before:left-0 before:text-blue-600">
+                            Engineered full-stack web applications including a real-time food ordering system, an interactive budget management tool,
+                            and a live stock trading platform using React, Node.js, and MongoDB.
+                        </li>
+                        <li className="relative pl-5 before:content-['▹'] before:absolute before:left-0 before:text-blue-600">
+                            Implemented modern development workflows with NPM, Parcel bundling, and Babel for optimized performance, reducing load 
+                            times by 40% and enabling seamless ES6+ compatibility.
+                        </li>
+                    </ul>
+                </div>
+            </a>
             </div>
         <div className="h-24"></div>
         </section>
