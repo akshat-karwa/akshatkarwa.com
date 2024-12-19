@@ -22,7 +22,30 @@ export default function Main() {
   }, []);
 
   return (
-    <main className="flex flex-col items-center justify-center min-h-screen bg-white">
+    <main 
+      className="flex flex-col items-center justify-center min-h-screen bg-white relative"
+      style={{
+        backgroundImage: 'url("../images/background.jpg")',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat',
+        backgroundAttachment: 'fixed',
+        WebkitOverflowScrolling: 'touch'
+      }}
+    >
+    <style jsx global>{`
+      @supports (-webkit-overflow-scrolling: touch) {
+        main {
+          -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+        }
+      }
+      
+      section {
+        background: transparent !important;
+      }
+    `}</style>
+
       <Navbar />
       <Home />
       <About />

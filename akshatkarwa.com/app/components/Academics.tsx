@@ -7,15 +7,6 @@ export default function Academics() {
       <section
         id="academics"
         className="relative w-full min-h-screen flex flex-col pt-24 pb-12"
-        style={{
-            backgroundImage: 'url("/images/background.jpg")',
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
-            backgroundRepeat: 'no-repeat',
-            backgroundAttachment: 'scroll',
-            position: 'relative',
-            width: '100%',
-        }}
       >
       <div className="flex items-center justify-center h-full">
         <div className="relative w-4/5 group">
