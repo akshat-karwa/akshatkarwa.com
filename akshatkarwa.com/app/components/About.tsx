@@ -5,15 +5,6 @@ export default function About() {
       <section
         id="about"
         className="relative w-full min-h-screen flex flex-col items-center justify-center text-center px-4 sm:px-6 lg:px-8 py-12 lg:py-0"
-        style={{
-            backgroundImage: 'url("/images/background.jpg")',
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
-            backgroundRepeat: 'no-repeat',
-            backgroundAttachment: 'scroll',
-            position: 'relative',
-            width: '100%',
-        }}
       >
       <div className="flex flex-col lg:flex-row items-center lg:items-start gap-6 lg:gap-12 max-w-7xl relative w-full">
         {/* Responsive sizes for all devices */}

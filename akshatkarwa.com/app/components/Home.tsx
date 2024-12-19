@@ -5,15 +5,6 @@ export default function Home() {
       <section 
           id="home" 
           className="relative w-full min-h-screen flex items-center justify-center text-center px-4 sm:px-6 lg:px-8 py-8 lg:py-0"
-          style={{
-              backgroundImage: 'url("/images/background.jpg")',
-              backgroundSize: 'cover',
-              backgroundPosition: 'center',
-              backgroundRepeat: 'no-repeat',
-              backgroundAttachment: 'scroll',
-              position: 'relative',
-              width: '100%',
-          }}
       >
       <div className="relative z-10 w-full max-w-3xl sm:max-w-4xl mx-auto">
         <h1 className="space-y-3 sm:space-y-4">
