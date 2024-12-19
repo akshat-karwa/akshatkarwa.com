@@ -24,17 +24,17 @@ export default function About() {
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-black mb-4 lg:mb-6">About Me</h2>
           <p className="text-sm sm:text-base lg:text-lg text-black">
             I am a computer scientist passionate about <strong>data science</strong> and <strong>innovative problem-solving</strong>, currently 
-            pursuing my <strong>MS in Computer Science at Georgia Tech</strong>. With expertise in <strong>algorithmic optimization</strong>, <strong>machine 
-            learning</strong>, and <strong>statistical modeling</strong>, I develop systems that transform complex data patterns 
+            pursuing my <strong>MS in Computer Science at Georgia Tech</strong>. With expertise in <strong>algorithmic optimization</strong>,
+            <strong> machine learning</strong>, and <strong>statistical modeling</strong>, I develop systems that transform complex data patterns 
             into actionable intelligence. My work combines rigorous analytical methods with creative problem-solving to build scalable, 
             user-centric applications that bridge the gap between technological innovation and real-world utility. 
             <br></br><br></br>
             I maintain an <strong>insatiable curiosity</strong> and <strong>embrace continuous learning</strong>, <strong>adapting my skillset </strong>
-            to tackle increasingly complex computational challenges. When I'm not coding, you'll find me exploring new technologies or collaborating with 
+            to tackle increasingly complex computational challenges. When I&apos;m not coding, you&apos;ll find me exploring new technologies or collaborating with 
             developers on open-source projects. Driven by the belief that thoughtfully designed systems can create cascading positive impacts, I am 
-            committed to democratizing technology access and building solutions that make a meaningful difference in people's lives.
+            committed to democratizing technology access and building solutions that make a meaningful difference in people&apos;s lives.
             <br></br><br></br>
-            <strong>Let's build something impactful together.</strong>
+            <strong>Let&apos;s build something impactful together.</strong>
           </p>
         </div>
       </div>
