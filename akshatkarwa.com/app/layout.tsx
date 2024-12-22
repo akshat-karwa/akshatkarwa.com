@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
+import Script from 'next/script'
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -35,17 +36,33 @@ export const metadata: Metadata = {
 }
 
 export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
-  return (
-    <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {children}
-      </body>
-    </html>
-  );
+      children,
+    }: {
+      children: React.ReactNode
+    }) {
+    return (
+      <html lang="en">
+        <head>
+          <Script id="schema" type="application/ld+json">
+            {`
+              {
+                "@context": "https://schema.org",
+                "@type": "Person",
+                "name": "Akshat Karwa",
+                "url": "https://akshatkarwa.com",
+                "sameAs": [
+                  "https://linkedin.com/in/your-profile",
+                  "https://github.com/your-profile"
+                  // Add other social media profiles
+                ],
+                "jobTitle": "Your Job Title",
+                "description": "Your professional summary"
+              }
+            `}
+          </Script>
+        </head>
+        <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+        {children}</body>
+      </html>
+    );
 }
