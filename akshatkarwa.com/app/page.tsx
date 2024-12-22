@@ -17,42 +17,64 @@ export default function Main() {
       setIsDesktop(window.innerWidth >= 1024);
     };
     checkScreenSize();
-    window.addEventListener('resize', checkScreenSize);
-    return () => window.removeEventListener('resize', checkScreenSize);
+    let timeoutId: NodeJS.Timeout | undefined;
+    const handleResize = () => {
+      if (timeoutId) {
+        clearTimeout(timeoutId);
+      }
+      timeoutId = setTimeout(checkScreenSize, 100);
+    };
+
+    window.addEventListener('resize', handleResize);
+    return () => {
+      window.removeEventListener('resize', handleResize);
+      if (timeoutId) {
+        clearTimeout(timeoutId);
+      }
+    };
   }, []);
 
   return (
-    <main 
-      className="flex flex-col items-center justify-center min-h-screen bg-white relative"
-      style={{
-        backgroundImage: 'url("../images/background.jpg")',
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        backgroundRepeat: 'no-repeat',
-        backgroundAttachment: 'fixed',
-        WebkitOverflowScrolling: 'touch'
-      }}
-    >
-    <style jsx global>{`
-      @supports (-webkit-overflow-scrolling: touch) {
-        main {
-          -webkit-transform: translateZ(0);
-          transform: translateZ(0);
-        }
-      }
-      
-      section {
-        background: transparent !important;
-      }
-    `}</style>
+    <>
+      <div 
+        className="fixed inset-0 w-full h-full bg-white"
+        style={{
+          backgroundImage: 'url("/images/background.jpg")',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat',
+          zIndex: -1,
+          willChange: 'transform',
+          WebkitBackfaceVisibility: 'hidden',
+          backfaceVisibility: 'hidden'
+        }}
+      />
+      <main className="relative flex flex-col items-center justify-center min-h-screen">
+        <Navbar />
+        <Home />
+        <About />
+        <Projects />
+        <div className={`w-full ${isMounted && !isDesktop ? 'hidden' : 'block'}`}>
+          <Academics />
+        </div>
+      </main>
 
-      <Navbar />
-      <Home />
-      <About />
-      <Projects />
-      <div className={`w-full ${isMounted && !isDesktop ? 'hidden' : 'block'}`}>
-        <Academics />
-      </div>
-    </main>
+      <style jsx global>{`
+        body {
+          overflow-x: hidden;
+        }
+        
+        section {
+          background: transparent !important;
+        }
+        
+        @media (min-width: 1024px) {
+          .fixed {
+            transform: translateZ(0);
+            -webkit-transform: translateZ(0);
+          }
+        }
+      `}</style>
+    </>
   );
 }
