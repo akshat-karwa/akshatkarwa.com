@@ -14,9 +14,25 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Akshat Karwa",
-  description: "Website Portfolio",
-};
+  title: 'Akshat Karwa | Portfolio',
+  description: 'Personal portfolio website showcasing my work in software development, projects, and professional experience.',
+  keywords: 'Akshat Karwa, Software Developer, Portfolio, Web Development',
+  openGraph: {
+    title: 'Akshat Karwa | Portfolio',
+    description: 'Personal portfolio website showcasing my work in software development, projects, and professional experience.',
+    url: 'https://akshatkarwa.com',
+    siteName: 'Akshat Karwa Portfolio',
+    images: [
+      {
+        url: '/images/background.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Akshat Karwa Portfolio'
+      }
+    ],
+    type: 'website'
+  }
+}
 
 export default function RootLayout({
   children,
