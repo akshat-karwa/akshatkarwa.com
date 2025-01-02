@@ -25,7 +25,7 @@ export default function About() {
           <p className="text-sm sm:text-base lg:text-lg text-black">
             I am a computer scientist passionate about <strong>data science</strong> and <strong>innovative problem-solving</strong>, currently 
             pursuing my <strong>MS in Computer Science at Georgia Tech</strong>. With expertise in <strong>algorithmic optimization</strong>,
-            <strong> machine learning</strong>, and <strong>statistical modeling</strong>, I develop systems that transform complex data patterns 
+            <strong> machine learning</strong>, and <strong>statistical modelling</strong>, I develop systems that transform complex data patterns 
             into actionable intelligence. My work combines rigorous analytical methods with creative problem-solving to build scalable, 
             user-centric applications that bridge the gap between technological innovation and real-world utility. 
             <br></br><br></br>
