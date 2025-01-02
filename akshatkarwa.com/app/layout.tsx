@@ -51,12 +51,10 @@ export default function RootLayout({
                 "name": "Akshat Karwa",
                 "url": "https://akshatkarwa.com",
                 "sameAs": [
-                  "https://linkedin.com/in/your-profile",
-                  "https://github.com/your-profile"
-                  // Add other social media profiles
+                  "https://linkedin.com/in/akshatkarwa",
+                  "https://github.com/akshat-karwa"
                 ],
-                "jobTitle": "Your Job Title",
-                "description": "Your professional summary"
+                "description": "Personal portfolio website showcasing my work in software development, projects, and professional experience."
               }
             `}
           </Script>
