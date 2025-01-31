@@ -8,17 +8,17 @@ export default function Projects() {
                 <h2 className="text-2xl sm:text-xl font-bold text-black text-center">SELECTED PROJECTS</h2>
             </div>
     
-            <div className="w-full max-w-[95rem] mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
+            <div className="w-full max-w-[95rem] mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 lg:gap-12">
     
             <a href="https://github.com/Mehul20/Buzz-AI"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group flex w-full transform transition-all duration-300 hover:scale-[1.02]"
             >
-                <div className="bg-white/90 backdrop-blur-sm p-3 sm:p-4 rounded-lg shadow-lg border-4 border-black flex flex-col w-full">
+                <div className="bg-white/90 backdrop-blur-sm p-2 sm:p-3 rounded-lg shadow-lg border-4 border-black flex flex-col w-full max-w-2xl mx-auto">
                     <h3 className="text-sm sm:text-base font-semibold text-blue-600 mb-1">BuzzAI - Course Discovery System - Georgia Tech</h3>
                     <p className="text-xs sm:text-sm font-medium text-black mb-3">Software Engineer</p>
-                    <div className="mb-3 aspect-video px-2 sm:px-4">
+                    <div className="mb-3 aspect-video px-2 sm:px-3 w-full h-auto">
                         <img 
                             src="/images/BuzzAI.jpg"
                             alt="BuzzAI Course Discovery Project"
@@ -43,10 +43,10 @@ export default function Projects() {
                 rel="noopener noreferrer"
                 className="group flex w-full transform transition-all duration-300 hover:scale-[1.02]"
             >
-                <div className="bg-white/90 backdrop-blur-sm p-3 sm:p-4 rounded-lg shadow-lg border-4 border-black flex flex-col w-full">
+                <div className="bg-white/90 backdrop-blur-sm p-2 sm:p-3 rounded-lg shadow-lg border-4 border-black flex flex-col w-full max-w-lg mx-auto">
                     <h3 className="text-sm sm:text-base font-semibold text-blue-600 mb-1">COVID Forecasting with Exogenous Data Integration</h3>
                     <p className="text-xs sm:text-sm font-medium text-black mb-3">Data Scientist</p>
-                    <div className="mb-3 aspect-video px-2 sm:px-4">
+                    <div className="mb-3 aspect-video px-2 sm:px-3 w-full h-auto">
                         <img 
                             src="/images/covid_forecasting.jpg"
                             alt="COVID Forecasting Project"
@@ -71,10 +71,10 @@ export default function Projects() {
                 rel="noopener noreferrer"
                 className="group flex w-full transform transition-all duration-300 hover:scale-[1.02]"
             >
-                <div className="bg-white/90 backdrop-blur-sm p-3 sm:p-4 rounded-lg shadow-lg border-4 border-black flex flex-col w-full">
+                <div className="bg-white/90 backdrop-blur-sm p-2 sm:p-3 rounded-lg shadow-lg border-4 border-black flex flex-col w-full max-w-2xl mx-auto">
                     <h3 className="text-sm sm:text-base font-semibold text-blue-600 mb-1">Spotify Song Genre Classifier & Popularity Predictor</h3>
                     <p className="text-xs sm:text-sm font-medium text-black mb-3">Machine Learning Engineer</p>
-                    <div className="mb-3 aspect-video px-2 sm:px-4">
+                    <div className="mb-3 aspect-video px-2 sm:px-3 w-full h-auto">
                         <img 
                             src="/images/genre_hit.jpg"
                             alt="Spotify Genre Popularity Project"
@@ -99,10 +99,10 @@ export default function Projects() {
                 rel="noopener noreferrer"
                 className="group flex w-full transform transition-all duration-300 hover:scale-[1.02]"
             >
-                <div className="bg-white/90 backdrop-blur-sm p-3 sm:p-4 rounded-lg shadow-lg border-4 border-black flex flex-col w-full">
+                <div className="bg-white/90 backdrop-blur-sm p-2 sm:p-3 rounded-lg shadow-lg border-4 border-black flex flex-col w-full max-w-2xl mx-auto">
                     <h3 className="text-sm sm:text-base font-semibold text-blue-600 mb-1">Voice Cloning Using Deep Learning</h3>
                     <p className="text-xs sm:text-sm font-medium text-black mb-3">Machine Learning Engineer</p>
-                    <div className="mb-3 aspect-video px-2 sm:px-4">
+                    <div className="mb-3 aspect-video px-2 sm:px-3 w-full h-auto">
                         <img 
                             src="/images/voice_cloning.jpg"
                             alt="Voice Cloning Project"
@@ -127,10 +127,10 @@ export default function Projects() {
                 rel="noopener noreferrer"
                 className="group flex w-full transform transition-all duration-300 hover:scale-[1.02]"
             >
-                <div className="bg-white/90 backdrop-blur-sm p-3 sm:p-4 rounded-lg shadow-lg border-4 border-black flex flex-col w-full">
+                <div className="bg-white/90 backdrop-blur-sm p-2 sm:p-3 rounded-lg shadow-lg border-4 border-black flex flex-col w-full max-w-2xl mx-auto">
                     <h3 className="text-sm sm:text-base font-semibold text-blue-600 mb-1">Automated Algorithm Design</h3>
                     <p className="text-xs sm:text-sm font-medium text-black mb-3">Software Engineer</p>
-                    <div className="mb-3 aspect-video px-2 sm:px-4">
+                    <div className="mb-3 aspect-video px-2 sm:px-3 w-full h-auto">
                         <img 
                             src="/images/AAD.jpg"
                             alt="Automated Algorithm Design Project"
@@ -151,10 +151,10 @@ export default function Projects() {
             </a>
 
             <a className="group flex w-full transform transition-all duration-300 hover:scale-[1.02]">
-                <div className="bg-white/90 backdrop-blur-sm p-3 sm:p-4 rounded-lg shadow-lg border-4 border-black flex flex-col w-full">
+                <div className="bg-white/90 backdrop-blur-sm p-2 sm:p-3 rounded-lg shadow-lg border-4 border-black flex flex-col w-full max-w-2xl mx-auto">
                     <h3 className="text-sm sm:text-base font-semibold text-blue-600 mb-1">BeeHired - Job Aggregation Portal</h3>
                     <p className="text-xs sm:text-sm font-medium text-black mb-3">Software Engineer</p>
-                    <div className="mb-3 aspect-video px-2 sm:px-4">
+                    <div className="mb-3 aspect-video px-2 sm:px-3 w-full h-auto">
                         <img 
                             src="/images/bee_hired.jpg"
                             alt="BeeHired Project"
@@ -175,10 +175,10 @@ export default function Projects() {
             </a>
 
             <a className="group flex w-full transform transition-all duration-300 hover:scale-[1.02]">
-                <div className="bg-white/90 backdrop-blur-sm p-3 sm:p-4 rounded-lg shadow-lg border-4 border-black flex flex-col w-full">
+                <div className="bg-white/90 backdrop-blur-sm p-2 sm:p-3 rounded-lg shadow-lg border-4 border-black flex flex-col w-full max-w-2xl mx-auto">
                     <h3 className="text-sm sm:text-base font-semibold text-blue-600 mb-1">Real-Time Algorithmic Trading Platform</h3>
                     <p className="text-xs sm:text-sm font-medium text-black mb-3">Software Developer</p>
-                    <div className="mb-3 aspect-video px-2 sm:px-4">
+                    <div className="mb-3 aspect-video px-2 sm:px-3 w-full h-auto">
                         <img 
                             src="/images/trading.jpg"
                             alt="Trading Platform Project"
@@ -200,10 +200,10 @@ export default function Projects() {
             </a>
 
             <a className="group flex w-full transform transition-all duration-300 hover:scale-[1.02]">
-                <div className="bg-white/90 backdrop-blur-sm p-3 sm:p-4 rounded-lg shadow-lg border-4 border-black flex flex-col w-full">
+                <div className="bg-white/90 backdrop-blur-sm p-2 sm:p-3 rounded-lg shadow-lg border-4 border-black flex flex-col w-full max-w-2xl mx-auto">
                     <h3 className="text-sm sm:text-base font-semibold text-blue-600 mb-1">Airline Database Management System</h3>
                     <p className="text-xs sm:text-sm font-medium text-black mb-3">Database Engineer</p>
-                    <div className="mb-3 aspect-video px-2 sm:px-4">
+                    <div className="mb-3 aspect-video px-2 sm:px-3 w-full h-auto">
                         <img 
                             src="/images/airline_database.jpg"
                             alt="Airline Management Database Project"
@@ -223,10 +223,10 @@ export default function Projects() {
             </a>
 
             <a className="group flex w-full transform transition-all duration-300 hover:scale-[1.02]">
-                <div className="bg-white/90 backdrop-blur-sm p-3 sm:p-4 rounded-lg shadow-lg border-4 border-black flex flex-col w-full">
+                <div className="bg-white/90 backdrop-blur-sm p-2 sm:p-3 rounded-lg shadow-lg border-4 border-black flex flex-col w-full max-w-2xl mx-auto">
                     <h3 className="text-sm sm:text-base font-semibold text-blue-600 mb-1">Road Crossing Mobile Game</h3>
                     <p className="text-xs sm:text-sm font-medium text-black mb-3">Mobile Developer</p>
-                    <div className="mb-3 aspect-video px-2 sm:px-4">
+                    <div className="mb-3 aspect-video px-2 sm:px-3 w-full h-auto">
                         <img 
                             src="/images/crossing_game.jpg"
                             alt="Road Crossing Game Project"
@@ -249,10 +249,10 @@ export default function Projects() {
                 rel="noopener noreferrer"
                 className="group flex w-full transform transition-all duration-300 hover:scale-[1.02]"
             >
-                <div className="bg-white/90 backdrop-blur-sm p-3 sm:p-4 rounded-lg shadow-lg border-4 border-black flex flex-col w-full">
+                <div className="bg-white/90 backdrop-blur-sm p-2 sm:p-3 rounded-lg shadow-lg border-4 border-black flex flex-col w-full max-w-2xl mx-auto">
                     <h3 className="text-sm sm:text-base font-semibold text-blue-600 mb-1">Coursework Constellation</h3>
                     <p className="text-xs sm:text-sm font-medium text-black mb-3">Data Visualization Engineer</p>
-                    <div className="mb-3 aspect-video px-2 sm:px-4">
+                    <div className="mb-3 aspect-video px-2 sm:px-3 w-full h-auto">
                         <img 
                             src="/images/coursework_visualization.jpg"
                             alt="Coursework Visualization Project"
@@ -277,10 +277,10 @@ export default function Projects() {
                 rel="noopener noreferrer"
                 className="group flex w-full transform transition-all duration-300 hover:scale-[1.02]"
             >
-                <div className="bg-white/90 backdrop-blur-sm p-3 sm:p-4 rounded-lg shadow-lg border-4 border-black flex flex-col w-full">
+                <div className="bg-white/90 backdrop-blur-sm p-2 sm:p-3 rounded-lg shadow-lg border-4 border-black flex flex-col w-full max-w-2xl mx-auto">
                     <h3 className="text-sm sm:text-base font-semibold text-blue-600 mb-1">Machine Learning Specialization</h3>
                     <p className="text-xs sm:text-sm font-medium text-black mb-3">ML Developer</p>
-                    <div className="mb-3 aspect-video px-2 sm:px-4">
+                    <div className="mb-3 aspect-video px-2 sm:px-3 w-full h-auto">
                         <img 
                             src="/images/ML_Coursera.jpg"
                             alt="JavaScript Applications Project"
@@ -305,10 +305,10 @@ export default function Projects() {
                 rel="noopener noreferrer"
                 className="group flex w-full transform transition-all duration-300 hover:scale-[1.02]"
             >
-                <div className="bg-white/90 backdrop-blur-sm p-3 sm:p-4 rounded-lg shadow-lg border-4 border-black flex flex-col w-full">
+                <div className="bg-white/90 backdrop-blur-sm p-2 sm:p-3 rounded-lg shadow-lg border-4 border-black flex flex-col w-full max-w-2xl mx-auto">
                     <h3 className="text-sm sm:text-base font-semibold text-blue-600 mb-1">JavaScript Applications</h3>
                     <p className="text-xs sm:text-sm font-medium text-black mb-3">Full Stack Developer</p>
-                    <div className="mb-3 aspect-video px-2 sm:px-4">
+                    <div className="mb-3 aspect-video px-2 sm:px-3 w-full h-auto">
                         <img 
                             src="/images/JS_certificate.jpg"
                             alt="JavaScript Applications Project"
