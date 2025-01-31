@@ -48,6 +48,20 @@ export default function Home() {
               </svg>
             </span>
           </Link>
+          <a 
+            href="/resume/Akshat_Karwa_Resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group inline-block w-full sm:w-[28rem] px-6 sm:px-8 lg:px-16 py-3 sm:py-4 bg-blue-600 text-white rounded-lg shadow-lg hover:bg-green-600 transition-all duration-300 ease-in-out transform hover:scale-105 hover:shadow-xl"
+          >
+            <span className="relative flex items-center justify-center gap-2">
+              Resume
+              <svg className="w-4 h-4 transition-transform duration-300 transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+              </svg>
+            </span>
+          </a>
+          
         </div>
 
         <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold text-black mb-3 sm:mb-4 mt-6 sm:mt-8">Lets Connect!</h2>
@@ -73,14 +87,6 @@ export default function Home() {
             className="px-3 sm:px-4 lg:px-6 py-2 sm:py-3 text-sm sm:text-base bg-blue-600 text-white rounded-lg shadow-md hover:bg-green-600 transition duration-300"
           >
             Email
-          </a>
-          <a 
-            href="/resume/Akshat_Karwa_Resume.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="px-3 sm:px-4 lg:px-6 py-2 sm:py-3 text-sm sm:text-base bg-blue-600 text-white rounded-lg shadow-md hover:bg-green-600 transition duration-300"
-          >
-            Resume
           </a>
           <a 
             href="tel:+14044909911"
