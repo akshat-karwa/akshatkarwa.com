@@ -38,8 +38,8 @@ export default function Navbar() {
 
   return (
     <nav className="w-full bg-black text-white shadow-md fixed top-0 z-50">
-      <div className="container mx-auto flex flex-wrap items-center justify-between py-3 px-4 sm:py-4 sm:px-6 lg:py-6 lg:px-8">
-        <div className="text-lg sm:text-xl lg:text-2xl font-bold hover:text-gray-300 transition duration-300">
+      <div className="container mx-auto flex flex-wrap items-center justify-between py-2 px-3 sm:py-3 sm:px-4 lg:py-4 lg:px-6">
+        <div className="text-base sm:text-lg lg:text-xl font-bold hover:text-gray-300 transition duration-300">
           <a 
             href="#home" 
             onClick={(e) => handleClick(e, 'home')}
@@ -60,7 +60,7 @@ export default function Navbar() {
         </button>
 
         {/* Desktop Navigation */}
-        <div className="hidden lg:flex font-bold text-xl space-x-16 xl:space-x-20">
+        <div className="hidden lg:flex font-bold text-lg space-x-12 xl:space-x-16">
           <a 
             href="#home" 
             onClick={(e) => handleClick(e, 'home')}
@@ -102,7 +102,7 @@ export default function Navbar() {
                 href="#home"
                 onClick={(e) => handleClick(e, 'home')}
                 onTouchEnd={(e) => handleClick(e, 'home')}
-                className="w-full text-center py-4 hover:bg-gray-800 transition duration-300 text-base sm:text-lg"
+                className="w-full text-center py-3 hover:bg-gray-800 transition duration-300 text-sm sm:text-base"
               >
                 Home
               </a>
