@@ -6,24 +6,21 @@ export default function Home() {
           id="home" 
           className="relative w-full min-h-screen flex items-center justify-center text-center px-4 sm:px-6 lg:px-8 py-8 lg:py-0"
       >
-      <div className="relative z-10 w-full max-w-3xl sm:max-w-4xl mx-auto">
-        <h1 className="space-y-3 sm:space-y-4">
-          <span className="block text-lg sm:text-xl lg:text-3xl font-light text-black tracking-wider">
-            Welcome to the Portfolio of
-          </span>
-          <span className="block text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-black">
-            Akshat Karwa
+      <div className="relative z-10 w-full max-w-6xl mx-auto text-center px-4 sm:px-6 lg:px-8 pt-24">
+        <h1>
+         <span className="text-xl sm:text-2xl lg:text-4xl font-light text-black-900 tracking-widest animate-fade-in mr-2 uppercase">
+            👨‍💻 Welcome to my portfolio! 🚀
           </span>
         </h1>
 
-        <div className="mt-4 sm:mt-6 lg:mt-8 inline-block p-3 sm:p-4 backdrop-blur-md bg-white/90 rounded-xl shadow-lg transform hover:scale-105 transition-transform duration-300">
-          <p className="text-base sm:text-lg lg:text-xl text-black font-light leading-relaxed">
-            BS & MS Computer Science @ Georgia Tech
-            <span className="block mt-2 text-black">
-              Data Science & Machine Learning Enthusiast
-            </span>
-          </p>
-        </div>
+          <div className="mt-10 w-full max-w-5xl bg-gradient-to-br from-white to-gray-100 rounded-3xl border border-black px-12 py-10 text-center shadow-[0_8px_24px_rgba(0,0,0,0.08)]">
+            <p className="text-xl sm:text-xl lg:text-xl text-gray-900 tracking-wider uppercase leading-relaxed">
+              Hi 👋, I'm <span className="text-black font-extrabold">Akshat Karwa</span>&nbsp;🚀&nbsp;&nbsp;&nbsp;&nbsp;CS Engineer 💻&nbsp; | Georgia Tech (BS & MS) 🐝
+            </p>
+            <p className="mt-4 text-xl sm:text-xl lg:text-xl text-gray-800 font-light tracking-wider leading-relaxed">
+              Building In - &nbsp;&nbsp;&nbsp; AI ML &nbsp;🤖🧠&nbsp;&nbsp; Data Science &nbsp;📊📈&nbsp;&nbsp; Scalable Systems &nbsp;🏗️⚙️
+            </p>
+          </div>
 
         <div className="mt-6 sm:mt-8 lg:mt-12 flex flex-col gap-3 sm:gap-4 justify-center items-center">
           <Link 
