@@ -39,10 +39,10 @@ export default function Main() {
       <div 
         className="fixed inset-0 w-full h-full bg-white"
         style={{
-          backgroundImage: 'url("/images/background.jpg")',
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          backgroundRepeat: 'no-repeat',
+          // backgroundImage: 'url("/images/background.jpg")',
+          // backgroundSize: 'cover',
+          // backgroundPosition: 'center',
+          // backgroundRepeat: 'no-repeat',
           zIndex: -1,
           willChange: 'transform',
           WebkitBackfaceVisibility: 'hidden',
