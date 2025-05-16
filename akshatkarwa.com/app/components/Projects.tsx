@@ -122,6 +122,32 @@ export default function Projects() {
                 </div>
             </a>
 
+            <a href="https://github.com/akshat-karwa/Cloud-Trace-Analysis"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group flex w-full transform transition-all duration-300 hover:scale-[1.02]"
+            >
+                <div className="bg-white/90 backdrop-blur-sm p-2 sm:p-3 rounded-lg shadow-lg border-4 border-black flex flex-col w-full max-w-2xl mx-auto">
+                    <h3 className="text-sm sm:text-base font-semibold text-blue-600 mb-1">Cloud Trace Analysis (Google, Azure, Alibaba)</h3>
+                    <p className="text-xs sm:text-sm font-medium text-black mb-3">Data Scientist</p>
+                    <div className="mb-3 aspect-video px-2 sm:px-3 w-full h-auto">
+                        <img 
+                            src="/images/cloud_analysis.png"
+                            alt="Cloud Trace Analysis"
+                            className="w-full h-full object-cover rounded-lg"
+                        />
+                    </div>
+                    <ul className="text-black text-left space-y-1.5 text-xs sm:text-sm flex-grow">
+                        <li className="relative pl-5 before:content-['▹'] before:absolute before:left-0 before:text-blue-600">
+                            Analyzed 10M+ trace rows from Google, 2.7M+ VMs from Azure, and 4000+ machines from Alibaba to uncover inefficiencies in CPU and memory utilization; normalized heterogeneous schemas and leveraged BigQuery and Pandas to enable cross-platform insights.
+                        </li>
+                        <li className="relative pl-5 before:content-['▹'] before:absolute before:left-0 before:text-blue-600">
+                            Built XGBoost regression models to predict utilization patterns, achieving 81.8% CPU accuracy on Google and 87.7% memory accuracy on Alibaba; revealed Azure's over-provisioning, Google’s bursty workload behavior, and Alibaba’s highly efficient memory usage.
+                        </li>
+                    </ul>
+                </div>
+            </a>
+
             <a href="https://github.com/akshat-karwa/Vertically-Integrated-Project_Auto_Algo_Design"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -169,6 +195,32 @@ export default function Projects() {
                         <li className="relative pl-5 before:content-['▹'] before:absolute before:left-0 before:text-blue-600">
                             Architected full-stack job platform using React/Express/MySQL processing 10,000+ posts in 24 mins, featuring 0.07s 
                             query response time, ghost job detection, and user-friendly multi-parameter filtering interface for personalized job search.
+                        </li>
+                    </ul>
+                </div>
+            </a>
+
+            <a href="https://github.com/akshat-karwa/viewership_forecasting"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group flex w-full transform transition-all duration-300 hover:scale-[1.02]"
+            >
+                <div className="bg-white/90 backdrop-blur-sm p-2 sm:p-3 rounded-lg shadow-lg border-4 border-black flex flex-col w-full max-w-2xl mx-auto">
+                    <h3 className="text-sm sm:text-base font-semibold text-blue-600 mb-1">Viewership Forecasting</h3>
+                    <p className="text-xs sm:text-sm font-medium text-black mb-3">Data Analyst</p>
+                    <div className="mb-3 aspect-video px-2 sm:px-3 w-full h-auto">
+                        <img 
+                            src="/images/viewership_forecast.png"
+                            alt="Viewership Forecasting Project"
+                            className="w-full h-full object-cover rounded-lg"
+                        />
+                    </div>
+                    <ul className="text-black text-left space-y-1.5 text-xs sm:text-sm flex-grow">
+                        <li className="relative pl-5 before:content-['▹'] before:absolute before:left-0 before:text-blue-600">
+                            Developed time series forecasting models on hourly streaming viewership data using Simple, Double, and Triple Exponential Smoothing, as well as SARIMA with seasonal differencing and bootstrapped confidence intervals.
+                        </li>
+                        <li className="relative pl-5 before:content-['▹'] before:absolute before:left-0 before:text-blue-600">
+                            Conducted EDA, trend/seasonality decomposition, and calendar-effect analysis; optimized forecasting accuracy via solver tuning and validation on a 75/25 time-based split, minimizing Mean Absolute Error (MAE).
                         </li>
                     </ul>
                 </div>
