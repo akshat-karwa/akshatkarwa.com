@@ -8,19 +8,25 @@ export default function Home() {
       >
       <div className="relative z-10 w-full max-w-6xl mx-auto text-center px-4 sm:px-6 lg:px-8 pt-24">
         <h1>
-         <span className="text-xl sm:text-2xl lg:text-4xl font-light text-black-900 tracking-widest animate-fade-in mr-2 uppercase">
+          <span className="block mx-auto text-xl sm:text-2xl lg:text-4xl font-light text-black tracking-widest animate-fade-in uppercase text-center">
             👨‍💻 Welcome to my portfolio! 🚀
           </span>
         </h1>
 
-          <div className="mt-10 w-full max-w-5xl bg-gradient-to-br from-white to-gray-100 rounded-3xl border border-black px-12 py-10 text-center shadow-[0_8px_24px_rgba(0,0,0,0.08)]">
-            <p className="text-xl sm:text-xl lg:text-xl text-gray-900 tracking-wider uppercase leading-relaxed">
-              Hi 👋, I'm <span className="text-black font-extrabold">Akshat Karwa</span>&nbsp;🚀&nbsp;&nbsp;&nbsp;&nbsp;CS Engineer 💻&nbsp; | Georgia Tech (BS & MS) 🐝
-            </p>
-            <p className="mt-4 text-xl sm:text-xl lg:text-xl text-gray-800 font-light tracking-wider leading-relaxed">
-              Building In - &nbsp;&nbsp;&nbsp; AI ML &nbsp;🤖🧠&nbsp;&nbsp; Data Science &nbsp;📊📈&nbsp;&nbsp; Scalable Systems &nbsp;🏗️⚙️
-            </p>
-          </div>
+        <div className="mt-10 w-full max-w-4xl mx-auto bg-gradient-to-br from-white to-gray-100 rounded-3xl border border-black px-12 py-10 text-center shadow-[0_8px_24px_rgba(0,0,0,0.08)]">
+          <p className="text-xl lg:text-xl text-gray-900 tracking-wider leading-relaxed">
+            Hi 👋, I&apos;m <span className="text-black font-extrabold">Akshat Karwa</span>
+            <span className="block sm:inline"> &nbsp;|&nbsp; CS Engineer 💻 </span>
+            <span className="block sm:inline"> &nbsp;|&nbsp; Georgia Tech (BS & MS) 🐝</span>
+          </p>
+          
+          <p className="mt-4 text-xl lg:text-xl text-gray-800 font-light tracking-wider leading-relaxed">
+            Building In
+            <span className="block sm:inline"> &nbsp; - &nbsp; AI & ML 🤖🧠 </span>
+            <span className="block sm:inline"> &nbsp; - &nbsp; Data Science 📊📈 </span>
+            <span className="block sm:inline"> &nbsp; - &nbsp; Scalable Systems 🏗️⚙️ </span>
+          </p>
+        </div>
 
         <div className="mt-6 sm:mt-8 lg:mt-12 flex flex-col gap-3 sm:gap-4 justify-center items-center">
           <Link 
