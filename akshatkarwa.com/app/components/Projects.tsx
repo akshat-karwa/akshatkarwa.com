@@ -142,7 +142,7 @@ export default function Projects() {
                             Analyzed 10M+ trace rows from Google, 2.7M+ VMs from Azure, and 4000+ machines from Alibaba to uncover inefficiencies in CPU and memory utilization; normalized heterogeneous schemas and leveraged BigQuery and Pandas to enable cross-platform insights.
                         </li>
                         <li className="relative pl-5 before:content-['▹'] before:absolute before:left-0 before:text-blue-600">
-                            Built XGBoost regression models to predict utilization patterns, achieving 81.8% CPU accuracy on Google and 87.7% memory accuracy on Alibaba; revealed Azure's over-provisioning, Google’s bursty workload behavior, and Alibaba’s highly efficient memory usage.
+                            Built XGBoost regression models to predict utilization patterns, achieving 81.8% CPU accuracy on Google and 87.7% memory accuracy on Alibaba; revealed Azure&apos;s over-provisioning, Google&apos;s bursty workload behavior, and Alibaba&apos;s highly efficient memory usage.
                         </li>
                     </ul>
                 </div>
