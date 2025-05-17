@@ -15,7 +15,7 @@ export default function Home() {
 
         <div className="mt-10 w-full max-w-4xl mx-auto bg-gradient-to-br from-white to-gray-100 rounded-3xl border border-black px-12 py-10 text-center shadow-[0_8px_24px_rgba(0,0,0,0.08)]">
           <p className="text-xl lg:text-xl text-gray-900 tracking-wider leading-relaxed">
-            Hi 👋, I'm <span className="text-black font-extrabold">Akshat Karwa</span>
+            Hi 👋, I&apos;m <span className="text-black font-extrabold">Akshat Karwa</span>
             <span className="block sm:inline"> &nbsp;|&nbsp; CS Engineer 💻 </span>
             <span className="block sm:inline"> &nbsp;|&nbsp; Georgia Tech (BS & MS) 🐝</span>
           </p>
