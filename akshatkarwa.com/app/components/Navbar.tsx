@@ -66,28 +66,28 @@ export default function Navbar() {
             onClick={(e) => handleClick(e, 'home')}
             className="hover:text-gray-300 transition duration-300 px-2"
           >
-            Home
+            HOME
           </a>
           <a 
             href="#about" 
             onClick={(e) => handleClick(e, 'about')}
             className="hover:text-gray-300 transition duration-300 px-2"
           >
-            About
+            ABOUT
           </a>
           <a 
             href="#projects" 
             onClick={(e) => handleClick(e, 'projects')}
             className="hover:text-gray-300 transition duration-300 px-2"
           >
-            Projects
+            PROJECTS
           </a>
           <a 
             href="#academics" 
             onClick={(e) => handleClick(e, 'academics')}
             className="hover:text-gray-300 transition duration-300"
           >
-            Academics
+            ACADEMICS
           </a>
         </div>
 
@@ -104,7 +104,7 @@ export default function Navbar() {
                 onTouchEnd={(e) => handleClick(e, 'home')}
                 className="w-full text-center py-3 hover:bg-gray-800 transition duration-300 text-sm sm:text-lg"
               >
-                Home
+                HOME
               </a>
               <a 
                 href="#about"
@@ -112,7 +112,7 @@ export default function Navbar() {
                 onTouchEnd={(e) => handleClick(e, 'about')}
                 className="w-full text-center py-4 hover:bg-gray-800 transition duration-300 text-base sm:text-lg"
               >
-                About
+                ABOUT
               </a>
               <a 
                 href="#projects"
@@ -120,7 +120,7 @@ export default function Navbar() {
                 onTouchEnd={(e) => handleClick(e, 'projects')}
                 className="w-full text-center py-4 hover:bg-gray-800 transition duration-300 text-base sm:text-lg"
               >
-                Projects
+                PROJECTS
               </a>
             </div>
           </div>
