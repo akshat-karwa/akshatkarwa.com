@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600&display=swap');
 
 :root {
   --background: #ffffff;

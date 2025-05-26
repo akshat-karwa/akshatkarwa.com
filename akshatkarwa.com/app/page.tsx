@@ -2,9 +2,9 @@
 import { useState, useEffect } from 'react';
 import Navbar from './components/Navbar';
 import Home from './components/Home';
-import About from './components/About';
+import Education from './components/Education';
 import Projects from './components/Projects';
-import Academics from './components/Academics';
+import Footer from './components/Footer';
 
 export default function Main() {
   const [isMounted, setIsMounted] = useState(false);
@@ -52,12 +52,10 @@ export default function Main() {
       <main className="relative flex flex-col items-center justify-center min-h-screen">
         <Navbar />
         <Home />
-        <About />
+        <Education />
         <Projects />
-        <div className={`w-full ${isMounted && !isDesktop ? 'hidden' : 'block'}`}>
-          <Academics />
-        </div>
       </main>
+      <Footer />
 
       <style jsx global>{`
         body {

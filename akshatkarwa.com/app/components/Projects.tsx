@@ -1,13 +1,17 @@
 export default function Projects() {
     return (
-            <section 
-                id="projects"
-                className="relative w-full min-h-screen flex flex-col items-center text-center pt-24 px-4 sm:px-6 lg:px-8"
+            <section
+            id="projects"
+            className="scroll-mt-24 relative w-full min-h-screen flex flex-col items-start justify-start bg-white text-black font-sans"
             >
-            <div className="border-4 border-black px-6 py-2 rounded-lg inline-block bg-white/90 backdrop-blur-sm mb-6 sm:mb-8">
-                <h2 className="text-2xl sm:text-xl font-bold text-black text-center">SELECTED PROJECTS</h2>
+            <div className="w-full max-w-6xl px-4 sm:px-6 lg:px-8">
+                <div className="border-b border-neutral-300 pb-2 mb-6">
+                <h2 className="text-xl sm:text-3xl font-sans font-semibold text-left text-neutral-900 tracking-tight">
+                    Selected Works
+                </h2>
+                </div>
             </div>
-    
+            
             <div className="w-full max-w-[95rem] mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 lg:gap-12">
     
             <a href="https://github.com/Mehul20/Buzz-AI"
