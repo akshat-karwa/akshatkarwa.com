@@ -2,9 +2,9 @@
 import { useState, useEffect } from 'react';
 import Navbar from './components/Navbar';
 import Home from './components/Home';
-import About from './components/About';
+import Education from './components/Education';
 import Projects from './components/Projects';
-import Academics from './components/Academics';
+import Footer from './components/Footer';
 
 export default function Main() {
   const [isMounted, setIsMounted] = useState(false);
@@ -16,23 +16,23 @@ export default function Main() {
     const checkScreenSize = () => {
       setIsDesktop(window.innerWidth >= 1024);
     };
+    
     checkScreenSize();
+    
     let timeoutId: NodeJS.Timeout | undefined;
     const handleResize = () => {
-      if (timeoutId) {
-        clearTimeout(timeoutId);
-      }
+      if (timeoutId) clearTimeout(timeoutId);
       timeoutId = setTimeout(checkScreenSize, 100);
     };
 
     window.addEventListener('resize', handleResize);
     return () => {
       window.removeEventListener('resize', handleResize);
-      if (timeoutId) {
-        clearTimeout(timeoutId);
-      }
+      if (timeoutId) clearTimeout(timeoutId);
     };
   }, []);
+
+  if (!isMounted) return null; // Prevent hydration mismatch
 
   return (
     <>
@@ -46,28 +46,32 @@ export default function Main() {
           zIndex: -1,
           willChange: 'transform',
           WebkitBackfaceVisibility: 'hidden',
-          backfaceVisibility: 'hidden'
+          backfaceVisibility: 'hidden',
         }}
       />
-      <main className="relative flex flex-col items-center justify-center min-h-screen">
+
+      <main
+        className={`relative flex flex-col ${
+          isDesktop ? "items-start" : "items-center"
+        } justify-center min-h-screen`}
+      >
         <Navbar />
         <Home />
-        <About />
+        <Education />
         <Projects />
-        <div className={`w-full ${isMounted && !isDesktop ? 'hidden' : 'block'}`}>
-          <Academics />
-        </div>
       </main>
+
+      <Footer />
 
       <style jsx global>{`
         body {
           overflow-x: hidden;
         }
-        
+
         section {
           background: transparent !important;
         }
-        
+
         @media (min-width: 1024px) {
           .fixed {
             transform: translateZ(0);
