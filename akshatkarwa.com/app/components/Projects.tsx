@@ -11,9 +11,8 @@ export default function Projects() {
                 </h2>
                 </div>
             </div>
-            
-            <div className="w-full max-w-[95rem] mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 lg:gap-12">
-    
+
+            <div className="w-full max-w-[95rem] mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 lg:gap-12">
             <a href="https://github.com/Mehul20/Buzz-AI"
                 target="_blank"
                 rel="noopener noreferrer"

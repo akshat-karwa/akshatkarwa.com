@@ -71,7 +71,7 @@ export default function Main() {
         section {
           background: transparent !important;
         }
-
+          
         @media (min-width: 1024px) {
           .fixed {
             transform: translateZ(0);
