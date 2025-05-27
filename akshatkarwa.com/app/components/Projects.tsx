@@ -10,6 +10,7 @@ const groupedProjects = {
   'Software & Full-stack': projects.filter(
     (p) => p.category === 'Software & Full-stack'
   ),
+  'Certifications': projects.filter((p) => p.category === 'Certifications'),
 };
 
 export default function Projects() {

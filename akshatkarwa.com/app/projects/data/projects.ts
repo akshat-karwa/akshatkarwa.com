@@ -265,7 +265,7 @@ const projects = [
     image: '/images/ML_Coursera.jpg',
     link: 'https://s3.amazonaws.com/coursera_assets/meta_images/generated/CERTIFICATE_LANDING_PAGE/CERTIFICATE_LANDING_PAGE~VTUQNGS7RRGG/CERTIFICATE_LANDING_PAGE~VTUQNGS7RRGG.jpeg',
     tags: ['Neural Networks', 'SVM', 'Octave', 'Unsupervised Learning', 'ML Theory'],
-    category: 'Data Science & Machine Learning',
+    category: 'Certifications',
     content: `
         <ul class="list-disc list-inside space-y-2 text-black text-sm">
         <li>
@@ -284,7 +284,7 @@ const projects = [
     image: '/images/JS_certificate.jpg',
     link: 'https://udemy-certificate.s3.amazonaws.com/image/UC-862a5f46-9354-4fc6-97ad-966e08fb0582.jpg?v=1593967988000',
     tags: ['React', 'Node.js', 'MongoDB', 'Parcel', 'ES6+'],
-    category: 'Software & Full-stack',
+    category: 'Certifications',
     content: `
         <ul class="list-disc list-inside space-y-2 text-black text-sm">
         <li>
