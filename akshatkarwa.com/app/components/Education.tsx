@@ -8,7 +8,7 @@ export default function Education() {
     >
       <div className="w-full max-w-6xl px-4 sm:px-6 lg:px-8">
         <div className="border-b border-neutral-300 pb-2 mb-6">
-          <h2 className="text-xl sm:text-3xl font-sans font-semibold text-left text-neutral-900 tracking-tight">
+          <h2 className="text-xl sm:text-2xl font-sans font-semibold text-left text-neutral-900 tracking-tight">
             Education
           </h2>
         </div>
@@ -43,14 +43,12 @@ export default function Education() {
           >
             View Relevant Coursework
           </a>
-
           <ul className="mt-1 space-y-1 text-sm sm:text-lg text-black list-disc list-inside">
             <li>
               Honors &amp; Awards: Highest Honors, Dean&apos;s List, Faculty Honors
             </li>
           </ul>
         </div>
-
         <div className="w-full flex justify-center mt-8">
           <div className="flex flex-col lg:flex-row gap-10 items-start">
             <div className="group w-full max-w-xs sm:max-w-sm transition hover:scale-105">
