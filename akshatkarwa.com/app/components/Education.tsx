@@ -18,9 +18,6 @@ export default function Education() {
             <h3 className="text-lg sm:text-xl leading-snug">
               Georgia Institute of Technology
             </h3>
-            <p className="text-sm sm:text-lg text-neutral-600">
-              College of Computing
-            </p>
             <p className="text-sm sm:text-base text-neutral-600">
               Atlanta, Georgia, United States of America
             </p>
