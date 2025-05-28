@@ -14,7 +14,7 @@ export default function Home() {
         </h1>
 
         <div className="mt-10 w-full max-w-5xl mx-auto px-6 text-center space-y-8">
-          <p className="text-2xl sm:text-3xl lg:text-4xl text-neutral-900 leading-snug tracking-wide">
+          <p className="text-2xl sm:text-3xl lg:text-4xl font-sans leading-snug tracking-wide">
             Hi, I&apos;m Akshat Karwa - a computer scientist passionate about solving real-world problems by building intelligent systems through thoughtful design.
           </p>
         </div>
