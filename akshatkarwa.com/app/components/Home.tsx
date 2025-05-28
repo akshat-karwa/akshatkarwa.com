@@ -13,9 +13,12 @@ export default function Home() {
           </span>
         </h1>
 
-        <div className="mt-10 w-full max-w-5xl mx-auto px-6 text-center space-y-8">
-          <p className="text-2xl sm:text-3xl lg:text-4xl font-sans leading-snug tracking-wide">
-            Hi, I&apos;m Akshat Karwa - a computer scientist passionate about solving real-world problems by building intelligent systems through thoughtful design.
+        <div className="mt-10 w-full max-w-5xl mx-auto px-6 text-center space-y-4">
+          <p className="text-xl sm:text-3xl lg:text-4xl font-sans leading-snug tracking-wide text-neutral-900">
+            Hi, I&apos;m Akshat Karwa
+          </p>
+          <p className="text-base sm:text-lg lg:text-xl font-sans text-neutral-500">
+            A computer scientist passionate about solving real-world problems by building intelligent systems through thoughtful design.
           </p>
         </div>
 
