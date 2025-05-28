@@ -4,7 +4,7 @@ export default function Education() {
   return (
     <section
       id="education"
-      className="scroll-mt-24 relative w-full min-h-screen flex flex-col items-start justify-start bg-white text-black font-sans"
+      className="scroll-mt-16 relative w-full min-h-screen flex flex-col items-start justify-start bg-white text-black font-sans"
     >
       <div className="w-full max-w-6xl px-4 sm:px-6 lg:px-8">
         <div className="border-b border-neutral-300 pb-2 mb-6">
