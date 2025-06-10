@@ -270,6 +270,26 @@ const projects = [
     `,
     },
     {
+    slug: 'bloomberg-market-concepts',
+    title: 'Bloomberg Market Concepts',
+    subtitle: '',
+    image: '/images/Bloomberg_market_concepts.png',
+    link: 'https://portal.bloombergforeducation.com/certificates/REw3J9XiftKz3mWqfogstbo1',
+    tags: ['Financial Analysis', 'Bloomberg Terminal Proficiency', 'Macroeconomic Indicators', 'Equity Valuation Models', 'Fixed Income Analytics',
+        'FX and Commodities Markets', 'Portfolio Management', 'Risk Assessment'],
+    category: 'Certifications',
+    content: `
+        <ul class="list-disc list-inside space-y-2 text-black text-sm">
+            <li>
+                Completed <strong>Bloomberg Market Concepts (BMC)</strong>, gaining deep insight into <strong>economic indicators, fixed income, equities, currencies, commodities, and options</strong> through real-world Terminal applications across 150+ functions.
+            </li>
+            <li>
+                Earned certification in <strong>Bloomberg Finance Fundamentals (BFF)</strong>, mastering core concepts of <strong>investing, portfolio management, and responsible finance</strong> via interactive, CPD-accredited modules exploring real-life financial strategies.
+            </li>
+        </ul>
+    `,
+    },
+    {
     slug: 'ml-specialization',
     title: 'Machine Learning Specialization',
     subtitle: 'ML Developer',
